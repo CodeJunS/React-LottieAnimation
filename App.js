@@ -22,8 +22,8 @@ export default class App extends React.Component {
               this.animation = animation;
             }}
             style={{
-              width: 400,
-              height: 600,
+              width: 200,
+              height: 400,
             }}
             source={this.state.animation}
           />}
@@ -73,7 +73,7 @@ export default class App extends React.Component {
 
   _anim2 = async () => {
     let result = await fetch(
-      'https://www.lottiefiles.com/storage/datafiles/jEgAWaDrrm6qdJx/data.json'
+      'https://www.lottiefiles.com/storage/datafiles/arIrMB5WY4Uhhgv0OuShBLzoAt9AnrzQCh9Z5wjW/spinner%20loading/data.json'
     )
       .then(data => {
         return data.json();
@@ -88,9 +88,9 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   animationContainer: {
     backgroundColor: '#3f51b5',
-    alignItems: 'center',
-    justifyContent: 'center',
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   buttonContainer: {
     paddingTop: 20,
